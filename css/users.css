@@ -1,0 +1,136 @@
+.admin-content {
+    padding: 2rem;
+    background-color: #f8f9fa; 
+    min-height: 100vh;
+}
+
+.page-header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.page-header-actions h2 {
+    font-family: 'Inter', sans-serif;
+    color: #1a1a2e;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.user-table-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+.user-table th {
+    text-align: left;
+    padding: 1rem;
+    background-color: #070707;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+.user-table td {
+    padding: 1.2rem 1rem;
+    vertical-align: middle;
+    color: #333;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 0.95rem;
+}
+
+.user-table tr:last-child td {
+    border-bottom: none;
+}
+
+.user-table tr:hover {
+    background-color: #fdfdfd;
+}
+
+.role-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    min-width: 80px;
+}
+
+.role-admin {
+    background: rgba(233, 69, 96, 0.1); /* Warna accent pink transparan */
+    color: #e94560;
+    border: 1px solid rgba(233, 69, 96, 0.2);
+}
+
+.role-user {
+    background: rgba(15, 52, 96, 0.1); /* Warna primary biru transparan */
+    color: #0f3460;
+    border: 1px solid rgba(15, 52, 96, 0.2);
+}
+
+.action-group {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.btn-action {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-edit {
+    background-color: #fff;
+    color: #f5a623;
+    border: 1.5px solid #f5a623;
+}
+
+.btn-edit:hover {
+    background-color: #f5a623;
+    color: #fff;
+}
+
+.btn-delete {
+    background-color: #fff;
+    color: #e94560;
+    border: 1.5px solid #e94560;
+}
+
+.btn-delete:hover {
+    background-color: #e94560;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .page-header-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .user-table-card {
+        padding: 1rem;
+        overflow-x: auto;
+    }
+}
